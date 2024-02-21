@@ -32,7 +32,7 @@ trends in data.
 
 Assumptions:
 
-Linearity: Assumes a linear relationship between the predictor and response variables.
-Independence: Assumes that observations are independent of each other.
-Homoscedasticity: Assumes that the variance of the residuals is constant across all levels of the predictor variable.
-Normality: Assumes that the residuals are approximately normally distributed.
+Linearity:          Assumes a linear relationship between the predictor and response variables.<br>
+Independence:       Assumes that observations are independent of each other.<br>
+Homoscedasticity:   Assumes that the variance of the residuals is constant across all levels of the predictor variable.<br>
+Normality:          Assumes that the residuals are approximately normally distributed.<br>
