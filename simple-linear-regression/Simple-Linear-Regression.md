@@ -9,7 +9,7 @@ Equation:
 The equation for a simple linear regression model is represented as:
 
 ````text
-Y = β + β1 * X 
+Y = β0 + β1 * X 
 ````
 
 In this equation, X and Y are called independent and dependent variables respectively,
