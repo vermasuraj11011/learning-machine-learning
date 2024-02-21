@@ -1,4 +1,4 @@
-# Simple Linear Regression Overview:
+# Simple Linear Regression:
 
 Simple Linear Regression is a statistical method used for modeling the relationship between a single independent
 variable (predictor) and a dependent variable (response). It assumes a linear relationship between the variables,
