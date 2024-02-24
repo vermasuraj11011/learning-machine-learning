@@ -27,4 +27,4 @@ method like Ordinary Least Squares (OLS).
 
 MLR assumes that the relationships between the variables are linear, and the model's accuracy 
 is evaluated based on how well it fits the observed data. It is a powerful tool in statistics 
-and machine learning for predicting and understanding the relationships between multiple variables.
+and machine learning for predicting and understanding the relationships between multiple variables. 
