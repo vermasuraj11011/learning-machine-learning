@@ -19,5 +19,5 @@ y = b0 + b1 * x + b2 * x^2 + b2 * x^3 + ...... bn * x^n
   features of required degree (2,3,..,n) and then modeled using a linear model."
 
 
-### See more
+### See more 
 - [Javapoint Polynomial Regression](https://www.javatpoint.com/machine-learning-polynomial-regression)
