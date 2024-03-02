@@ -14,9 +14,9 @@ the data within this margin, and any data points falling outside the margin cont
 - **Loss Function**: SVR uses a loss function that penalizes errors based on how far they are from the true values.
 The loss function includes a regularization term to prevent over fitting.
 - **Hyperparameters**: SVR has hyperparameters like the choice of kernel, regularization parameter (C), 
-- and kernel-specific parameters. These need to be tuned to achieve the best model performance.
+ and kernel-specific parameters. These need to be tuned to achieve the best model performance.
 - **Prediction**: Once trained, the SVR model can make predictions on new, unseen data by transforming the input 
-- features using the learned kernel function.
+features using the learned kernel function.
 
 It's important to note that SVR is effective in high-dimensional spaces and is especially useful when the relationship 
 between variables is non-linear. However, proper tuning of hyperparameters is crucial for optimal performance. 

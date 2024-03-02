@@ -14,11 +14,11 @@ independent variables is:
 Y = β0 + β1 * X1 + β2 * X2 + ... +  βp * Xp + ε
 ````
 
-Y is the dependent variable.    
-X1, X2, ... Xp are the independent variables.   
-β0 is the intercept (constant term).    
-β1 ,β2 , .. ,βp are the coefficients representing the strength and direction of the relationships.  
-ε is the error term, representing the unobserved factors that affect the dependent variable 
+- Y is the dependent variable.    
+- X1, X2, ... Xp are the independent variables.   
+- β0 is the intercept (constant term).    
+- β1 ,β2 , .. ,βp are the coefficients representing the strength and direction of the relationships.  
+- ε is the error term, representing the unobserved factors that affect the dependent variable 
 but are not included in the model.
 
 The goal of MLR is to estimate the coefficients (β values) in a way that minimizes the sum of 
