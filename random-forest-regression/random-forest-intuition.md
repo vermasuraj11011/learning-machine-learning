@@ -1,40 +1,45 @@
-## Random Forest Intuition
+# Random Forest Algorithm
 
-Random Forest is an ensemble learning method used for both classification and regression tasks. 
-It builds multiple decision trees and merges their predictions to improve accuracy and reduce over-fitting.
-Here's an intuition and a high-level definition of a Random Forest model:
+Random Forest is a popular and versatile machine learning algorithm that is capable of performing both regression and
+classification tasks. It is a type of ensemble learning method, where a group of weak models combine to form a powerful
+model.
 
-### Intuition:
+## How Random Forest Works:
 
-- **Ensemble of Trees:** Random Forest builds a collection (ensemble) of decision trees 
-during training.<br>
-- **Random Feature Selection:** At each node of a decision tree, instead of considering all
-features, Random Forest randomly selects a subset of features for making decisions. 
-This introduces diversity among the trees.<br>
-- **Bootstrap Aggregating (Bagging):** Each tree in the Random Forest is trained on a different 
-subset of the training data. This is achieved through a process called bootstrapping, where
-random samples with replacement are drawn from the training dataset.<br>
-- **Voting or Averaging:** For classification tasks, each tree "votes" for a class, and the class with the majority of votes becomes the final prediction. For regression tasks, the predictions of all trees are averaged.
+1. **Creating Subsets of Dataset:** Random Forest starts by creating multiple subsets of the original dataset.
 
-### High-level Definition:
-Random Forest is an ensemble learning method that constructs a multitude of decision trees during 
-training and outputs the mode (for classification) or mean prediction (for regression) of the 
-individual trees. The randomness introduced in feature selection and data sampling helps to 
-decorrelate the trees, leading to a more robust and accurate model.
+2. **Building Decision Trees:** For each subset, a decision tree is built. During the construction of the tree, only a
+   random subset of features are considered for splitting a node.
 
-### Key Features:
-- **Decision Trees:** The base learners in a Random Forest are decision trees. These trees are 
-typically shallow to avoid over-fitting.<br>
-- **Random Feature Subset:** At each node of a tree, a random subset of features is considered 
-for splitting, reducing correlation between trees.<br>
-- **Bootstrapping:** Each tree is trained on a bootstrap sample (random sample with replacement)
-from the original dataset.<br>
-- **Ensemble Averaging/Voting:** The final prediction is obtained by aggregating the predictions 
-of all trees, either through voting (for classification) or averaging (for regression).<br>
-- **Robustness:** Random Forest is known for its robustness and ability to handle noisy and complex
-datasets.
+3. **Making Predictions:** When making predictions, each tree in the Random Forest gives its own prediction and the
+   final prediction is made by taking the majority vote for classification, or an average for regression.
 
-Random Forest is widely used in practice due to its versatility, ease of use, and ability to provide high-quality predictions across a variety of tasks. It is a powerful tool for both beginners and experienced practitioners in machine learning.
+## Advantages of Random Forest:
 
-### See more 
+- **Handling Overfitting:** Random Forest reduces overfitting problem in decision trees and also reduces the variance
+  and therefore improves the accuracy.
+
+- **Handling Large Datasets:** It can handle large datasets with high dimensionality.
+
+- **Estimating Missing Data:** Random Forest can maintain accuracy when a large proportion of the data are missing.
+
+## Disadvantages of Random Forest:
+
+- **Complexity:** Random Forest creates a lot of trees (unlike only one tree in case of decision tree) and combines
+  their outputs. By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much
+  computational power and resources.
+
+- **Longer Training Period:** Random Forest require much more time to train as compared to decision trees as it
+  generates a lot of trees (instead of one tree in case of decision tree) and makes decision on the majority of votes.
+
+## Applications of Random Forest:
+
+Random Forest has a variety of applications, such as recommendation engines, image classification and feature selection.
+It can be used to classify loyal loan applicants, identify fraudulent activity and predict diseases.
+
+Please note that this is a general overview of the Random Forest algorithm. Depending on the specifics of your project,
+you might want to add more details or examples.
+
+### See more
+
 - [Random Forest Regression](https://scikit-learn.org/stable/modules/ensemble.html#random-forests)
